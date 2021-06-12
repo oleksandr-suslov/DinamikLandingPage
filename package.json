@@ -1,16 +1,16 @@
 {
-  "name": "dinamiklandingpage",
+  "name": "dinamik-landing-page",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://oleksandr-suslov.github.io/dinamiklandingpage",
+  "homepage": "https://oleksandr-suslov.github.io/dinamik-landing-page",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /dinamiklandingpage/"
+    "build": "parcel build src/*.html --public-url /dinamik-landing-page/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oleksandr-suslov/dinamiklandingpage.git"
+    "url": "git+https://github.com/oleksandr-suslov/dinamik-landing-page.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
