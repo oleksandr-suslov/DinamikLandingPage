@@ -23,9 +23,6 @@ const time = document.getElementById('time'),
         setTimeout(showTime, 1000);
     }
 
-//Run
-showTime()
-
 // Add Zeros 
 function addZero (t){
     return (parseInt(t, 10) < 10 ? '0' : "") + t;
@@ -38,19 +35,17 @@ function setBgGreet (){
 
     if(hour < 12){
         // It's morning
-        document.body.style.backgroundImage = "url('../images/morning.jpg')";
+        document.body.style.backgroundImage = "url('./src/images/morning.jpg')";
         greeting.textContent ='Good morning';
        
     } else if(hour < 18){
         // It's afternoon
-        
-        document.body.style.backgroundImage = "url('../images/afternoon.jpg')";
-        document.body.style.color = 'yellow';
-          greeting.textContent ='good afternoon';
+        document.body.style.backgroundImage = "url('./src/images/afternoon.jpg')";
+          greeting.textContent ='Good afternoon';
     } else {
         // It's evening
-        document.body.style.backgroundImage = "url('../images/night.jpg')";
-        greeting.textContent ='good evening!';
+        document.body.style.backgroundImage = "url('./src/images/night.jpg')";
+        greeting.textContent ='Good evening!';
         // document.body.style.color = 'white';
     }
 };
