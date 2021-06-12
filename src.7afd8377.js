@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");const e=document.getElementById("time"),t=document.getElementById("greeting"),n=document.getElementById("name"),o=document.getElementById("focus");function s(){let t=new Date,n=t.getHours(),o=t.getMinutes(),u=t.getSeconds();n=n%12||12,e.innerHTML=`${g(n)}<span>:</span>${g(o)}<span>:</span>${g(u)}`,setTimeout(s,1e3)}function g(e){return(parseInt(e,10)<10?"0":"")+e}function u(){let e=(new Date).getHours();e<12?(document.body.style.backgroundImage="url('./src/images/morning.jpg')",t.textContent="Good morning"):e<18?(document.body.style.backgroundImage="url('./src/images/afternoon.jpg')",t.textContent="Good afternoon"):(document.body.style.backgroundImage="url('./src/images/night.jpg')",t.textContent="Good evening!")}s(),u();
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/dinamiklandingpage/src.7afd8377.js.map
+//# sourceMappingURL=/dinamik-landing-page/src.7afd8377.js.map
