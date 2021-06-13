@@ -15,10 +15,18 @@ body {
   height: 100vh;
   color: black;
 
-  // background-image: url('../images/morning.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.morning {
+  background-image: url('../images/morning.jpg');
+}
+.afternoon {
+  background-image: url('../images/afternoon.jpg');
+}
+.night {
+  background-image: url('../images/night.jpg');
 }
 #time {
   font-size: 8rem;
