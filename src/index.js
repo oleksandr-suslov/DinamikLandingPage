@@ -7,7 +7,7 @@ const time = document.getElementById('time'),
 const showAmPm = true;
     // Show Time
 function showTime() {
-        // let today = new Date(2019, 06, 10, 20, 33, 30),
+        // let today = new Date(2019, 06, 10, 20, 33, 30, 10),
         let today = new Date(),
             hour = today.getHours(),
             min = today.getMinutes(),
@@ -32,32 +32,27 @@ function addZero (n){
 
 // Set Background and Greeting
 function setBgGreet() {
-    // let today = new Date(2019, 06, 10, 20, 33, 30),
+    // let today = new Date(2019, 06, 10, 20, 33, 30, 10),
     let today = new Date(),
         hour = today.getHours();
+        document.body.classList.add('morning', 'afternoon', 'night');
 
     if (hour < 12) {
         // It's morning
         // document.body.style.backgroundImage = "url('../src/images/morning.jpg')";
         greeting.textContent = 'Good morning';
         document.body.style.color = 'blue';
-            if (document.body.classList.contains('night')) {
-            document.body.classList.replace('night', 'morning');
-        } else {
-            document.body.classList.add('morning');
-        };
-    
+            document.body.classList.remove('afternoon', 'night');
     }
-    
     else if (hour < 18) {
         // It's afternoon
         // document.body.style.backgroundImage = "url('../src/images/afternoon.jpg')";
         greeting.textContent = 'Good afternoon';
-        document.body.classList.replace('morning', 'afternoon');
+        document.body.classList.remove('morning', 'night');
     } else {
         // It's evening
         // document.body.style.backgroundImage = "url('../src/images/night.jpg')";
- document.body.classList.replace('afternoon', 'night');
+ document.body.classList.remove('morning', 'afternoon');
         greeting.textContent ='Good evening!';
         document.body.style.color = 'white';
     }
